@@ -1,5 +1,8 @@
 ﻿# AndroidSensor
  
+ ## Descrição
+ API REST Spring Boot / WebService para captura dos dados do apk;
+ 
  ## Ao Professor
  Aplicativo desenvolvido em Spring Boot com Gradle
  O mesmo está hospedado em: https://android-sensor-api.herokuapp.com/
