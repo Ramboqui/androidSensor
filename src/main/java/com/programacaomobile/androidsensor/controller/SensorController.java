@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -16,6 +17,7 @@ import com.programacaomobile.androidsensor.services.SensorService;
 
 @RestController
 @RequestMapping(value = "/api/v1/sensor")
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 public class SensorController {
 
 	private SensorService service;
@@ -27,6 +29,7 @@ public class SensorController {
 
 	@PostMapping("/uploadSensor")
 	public ResponseEntity<Sensor> uploadSensors(@RequestBody SensorDto sensors) {
+		System.out.println("---------------------------------");
 		return ResponseEntity.ok().body(service.uploadSensor(sensors));
 	}
 	

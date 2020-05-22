@@ -1,5 +1,6 @@
 package com.programacaomobile.androidsensor.entity;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -27,7 +28,7 @@ public class Sensor {
 	
 	private Integer humidity;
 	
-	@ManyToOne
+	@ManyToOne(cascade = CascadeType.PERSIST)
 	@JoinColumn(name = "position_value")
 	private Position position;
 	private Double luminosity;
