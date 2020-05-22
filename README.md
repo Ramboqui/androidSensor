@@ -11,3 +11,12 @@
   Baixe o lombok, jogue na pasta do Spring Tool Suite, abra-o e selecione manualmente o exe da IDE e made instalar;
   Abra a IDE e import como Gradle o projeto.
   Execute (http://localhost:8080/);
+
+Gabriel do Nascimento Trindade
+1894375
+
+Guilherme Aguilera Viana
+1874480
+
+Matheus Custodio de Souza
+1718260
